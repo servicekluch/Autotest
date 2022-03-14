@@ -9,7 +9,10 @@ class MainKtTest {
         val currentAmount = 25_000_00
         val previousAmount = 25_000_00
         val commissionAmount = 0
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountMastercard))
+
+        val result = getCommission(currentAmount, previousAmount, accountMastercard)
+
+        assertEquals(commissionAmount, result)
     }
 
     @Test
@@ -18,7 +21,10 @@ class MainKtTest {
         val currentAmount = 100_000_00
         val previousAmount = 75_000_00
         val commissionAmount = 620_00
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountMastercard))
+
+        val result = getCommission(currentAmount, previousAmount, accountMastercard)
+
+        assertEquals(commissionAmount, result)
 
     }
     @Test
@@ -27,7 +33,10 @@ class MainKtTest {
         val currentAmount = 25_000_00
         val previousAmount = 25_000_00
         val commissionAmount = 0
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountMaestro))
+
+        val result = getCommission(currentAmount, previousAmount, accountMaestro)
+
+        assertEquals(commissionAmount, result)
     }
     @Test
     fun getCommissionMaestro_summaryMonthAmount() {
@@ -35,7 +44,10 @@ class MainKtTest {
         val currentAmount = 100_000_00
         val previousAmount = 75_000_00
         val commissionAmount = 620_00
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountMaestro))
+
+        val result = getCommission(currentAmount, previousAmount, accountMaestro)
+
+        assertEquals(commissionAmount, result)
     }
     @Test
     fun getCommissionVisa_oneTimeTransfer() {
@@ -43,7 +55,10 @@ class MainKtTest {
         val currentAmount = 0
         val previousAmount = 0
         val commissionAmount = 35_00
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountVisa))
+
+        val result = getCommission(currentAmount, previousAmount, accountVisa)
+
+        assertEquals(commissionAmount, result)
     }
     @Test
     fun getCommissionVisa_summaryMonthAmount() {
@@ -51,7 +66,10 @@ class MainKtTest {
         val currentAmount = 100_000_00
         val previousAmount = 0
         val commissionAmount = 750_00
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountVisa))
+
+        val result = getCommission(currentAmount, previousAmount, accountVisa)
+
+        assertEquals(commissionAmount, result)
     }
     @Test
     fun getCommissionMir_oneTimeTransfer() {
@@ -59,7 +77,10 @@ class MainKtTest {
         val currentAmount = 0
         val previousAmount = 0
         val commissionAmount = 35_00
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountMir))
+
+        val result = getCommission(currentAmount, previousAmount, accountMir)
+
+        assertEquals(commissionAmount, result)
     }
     @Test
     fun getCommissionMir_summaryMonthAmount() {
@@ -67,13 +88,18 @@ class MainKtTest {
         val currentAmount = 100_000_00
         val previousAmount = 0
         val commissionAmount = 750_00
-        assertEquals(commissionAmount, getCommission(currentAmount, previousAmount, accountMir))
+
+        val result = getCommission(currentAmount, previousAmount, accountMir)
+
+        assertEquals(commissionAmount, result)
     }
     @Test
     fun getCommissionVkPay() {
         val accountVkPay = CardType.VkPay
         val currentAmount = 0
         val previousAmount = 100_000
-        assertEquals(0, getCommission(currentAmount, previousAmount, accountVkPay))
+
+        val result = getCommission(currentAmount, previousAmount, accountVkPay)
+        assertEquals(0, result)
     }
 }
