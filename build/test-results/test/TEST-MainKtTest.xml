@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainKtTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-03-14T11:38:13" hostname="DESING" time="0.007">
+  <properties/>
+  <testcase name="getCommissionVisa_summaryMonthAmount" classname="MainKtTest" time="0.006"/>
+  <testcase name="getCommissionVisa_oneTimeTransfer" classname="MainKtTest" time="0.0"/>
+  <testcase name="getCommissionMaestro_oneTimeTransfer" classname="MainKtTest" time="0.0"/>
+  <testcase name="getCommissionMastercard_summaryMonthAmount" classname="MainKtTest" time="0.0"/>
+  <testcase name="getCommissionVkPay" classname="MainKtTest" time="0.0"/>
+  <testcase name="getCommissionMir_summaryMonthAmount" classname="MainKtTest" time="0.0"/>
+  <testcase name="getCommissionMastercard_oneTimeTransfer" classname="MainKtTest" time="0.0"/>
+  <testcase name="getCommissionMir_oneTimeTransfer" classname="MainKtTest" time="0.0"/>
+  <testcase name="getCommissionMaestro_summaryMonthAmount" classname="MainKtTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
