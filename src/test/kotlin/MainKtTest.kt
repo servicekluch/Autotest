@@ -74,6 +74,6 @@ class MainKtTest {
         val accountVkPay = CardType.VkPay
         val currentAmount = 0
         val previousAmount = 100_000
-        assertEquals(1, getCommission(currentAmount, previousAmount, accountVkPay))
+        assertEquals(0, getCommission(currentAmount, previousAmount, accountVkPay))
     }
 }
